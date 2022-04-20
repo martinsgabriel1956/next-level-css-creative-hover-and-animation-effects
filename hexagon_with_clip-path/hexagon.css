@@ -1,0 +1,9 @@
+.hexagon {
+  position: relative;
+  width: 100px;
+  height: 110px;
+  background-color: #111;
+
+  /* Create a hexagon */
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
