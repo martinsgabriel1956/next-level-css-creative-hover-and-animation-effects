@@ -11,26 +11,6 @@
   transition: 2s;
 }
 
-.hexagon:hover {
-  transition: 0s;
-  background-color: #0f0;
-}
-
-.hexagon::after {
-  content: '';
-  position: absolute;
-  top: 4px;
-  bottom: 4px;
-  left: 4px;
-  right: 4px;
-  
-  background-color: #111;
-  
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-
-  z-index: 1;
-}
-
 .hexagon::before {
   content: '';
   position: absolute;
@@ -38,10 +18,7 @@
   left: 0;
   width: 50%;
   height: 100%;
-
   pointer-events: none;
-
   background-color: rgba(255,255,255,0.02);
-
   z-index: 1000;
 }

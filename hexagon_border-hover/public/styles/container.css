@@ -2,7 +2,7 @@
   position: relative;
   height: 100vh;
   overflow: hidden;
-  animation: hexagon-animation 4s linear infinite;
+  z-index: 2;
 }
 
 .row {
@@ -16,11 +16,3 @@
   margin-left: 1px;
 }
 
-@keyframes hexagon-animation {
-  0% {
-    filter: hue-rotate(0deg)
-  }
-  100% {
-    filter: hue-rotate(360deg)
-  }
-}
