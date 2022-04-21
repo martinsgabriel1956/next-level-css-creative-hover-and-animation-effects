@@ -5,10 +5,10 @@
 }
 
 body {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   min-height: 100vh;
 
-  background: #ffeb3b;
+  /* background: #ffeb3b; */
 }

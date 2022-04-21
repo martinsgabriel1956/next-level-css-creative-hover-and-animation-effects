@@ -4,6 +4,21 @@
   position: relative;
 }
 
+.container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.row {
+  display: inline-flex;
+  margin-top: -45px;
+}
+
+.row:nth-child(even) {
+  margin-top: -45px;
+  margin-left: -75px;
+}
+
 .cube {
   width: 150px;
   height: 150px;
