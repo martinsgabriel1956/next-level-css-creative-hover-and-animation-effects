@@ -1,0 +1,18 @@
+.container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.row {
+  display: inline-flex;
+  margin-top: -32px;
+  margin-left: -50px;
+}
+
+/* :nth-child(even) => Estudar Depois */
+.row:nth-child(even) {
+  margin-left: 1px;
+}
+

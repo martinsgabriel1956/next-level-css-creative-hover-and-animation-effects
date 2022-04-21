@@ -1,0 +1,24 @@
+.hexagon {
+  position: relative;
+  width: 100px;
+  height: 110px;
+  background-color: #111;
+  margin: 2px;
+  
+  /* Create a hexagon */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  
+  transition: 2s;
+}
+
+.hexagon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  pointer-events: none;
+  background-color: rgba(255,255,255,0.02);
+  z-index: 1000;
+}

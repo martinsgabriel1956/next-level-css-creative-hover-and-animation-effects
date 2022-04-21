@@ -1,0 +1,47 @@
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+section > div {
+  position: relative;
+  width: 50%;
+  background-color: #20506b;
+  overflow: hidden;
+}
+
+section > div:nth-child(1) {
+  position: relative;
+  width: 50%;
+  background-image: url('../../assets/img.jpg');
+  background-size: cover;
+  overflow: hidden;
+}
+
+section > div:nth-child(1) > h2 {
+  -webkit-text-stroke: 2px; /*Estudar Depois*/
+  -webkit-text-stroke-color: #fff; /*Estudar Depois*/
+  -webkit-text-fill-color: transparent; /*Estudar Depois*/
+  left: 100%;
+}
+
+section > div > h2 {
+  position: absolute;
+  white-space: nowrap;
+  font-size: 12em;
+  line-height: 100vh;
+  color: #fff;
+  animation: scrolling-text-animation 60s linear infinite;
+}
+
+@keyframes scrolling-text-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

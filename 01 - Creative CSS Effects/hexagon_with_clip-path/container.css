@@ -1,0 +1,26 @@
+.container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  animation: hexagon-animation 4s linear infinite;
+}
+
+.row {
+  display: inline-flex;
+  margin-top: -32px;
+  margin-left: -50px;
+}
+
+/* :nth-child(even) => Estudar Depois */
+.row:nth-child(even) {
+  margin-left: 1px;
+}
+
+@keyframes hexagon-animation {
+  0% {
+    filter: hue-rotate(0deg)
+  }
+  100% {
+    filter: hue-rotate(360deg)
+  }
+}
