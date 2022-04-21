@@ -4,9 +4,11 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   min-height: 100vh;
+
+  background: #ffeb3b;
 }
