@@ -33,6 +33,25 @@
   height: 100%;
   
   background-color: #fff;
+
+  transition: 2s;
+
+  animation: cube-animation 10s linear infinite;
+}
+
+@keyframes cube-animation {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.cube:hover > span {
+  background-color: #03a9f4;
+  transition: 0s;
 }
 
 .cube > span:nth-child(1) {
