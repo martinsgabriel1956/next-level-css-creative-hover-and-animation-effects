@@ -1,0 +1,10 @@
+canvas {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+}
+
+.dg.ac {
+  display: none;
+}
